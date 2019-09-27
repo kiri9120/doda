@@ -200,27 +200,18 @@ body p {
   width: 150px;
 }
 
-.w-230px {
-  width: 230px;
+.minh-450px {
+  min-height: 450px;
 }
 
 .border-2px {
   border: 2px solid #1e2380;
 }
 
-.minh-450px {
-  min-height: 450px;
-}
-
 .position-center {
   left: 50% !important;
   -webkit-transform: translateX(-50%) !important;
   transform: translateX(-50%) !important;
-}
-
-i {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
 }
 
 .fa-check-circle {

@@ -81,7 +81,6 @@ body {
 .darkblue {
     color: $main-color;
 }
-
 .text-white {
     color: #fff;
 }
@@ -230,16 +229,12 @@ body {
     width: 150px;
 }
 
-.w-230px {
-    width: 230px;
+.minh-450px {
+    min-height: 450px;
 }
 
 .border-2px {
     border: 2px solid $main-color;
-}
-
-.minh-450px {
-    min-height: 450px;
 }
 
 .position-center {
@@ -249,10 +244,6 @@ body {
 }
 
 //font-awesome
-i {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-}
 
 .fa-check-circle {
     color: $main-color;
