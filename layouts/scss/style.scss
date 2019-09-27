@@ -37,6 +37,11 @@ body {
     p{
         font-size: $font-size-md;
         margin: 0;
+
+            @include sp-only {
+                font-size: $font-size-sm;
+            }
+
     }
 }
 
@@ -227,6 +232,10 @@ body {
 
 .w-150px {
     width: 150px;
+}
+
+.minw-150px {
+    min-width: 150px;
 }
 
 .minh-450px {

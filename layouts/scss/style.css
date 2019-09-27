@@ -18,6 +18,12 @@ body p {
   margin: 0;
 }
 
+@media (max-width: 992px) {
+  body p {
+    font-size: 0.875rem;
+  }
+}
+
 .bg {
   background-size: cover;
 }
@@ -198,6 +204,10 @@ body p {
 
 .w-150px {
   width: 150px;
+}
+
+.minw-150px {
+  min-width: 150px;
 }
 
 .minh-450px {
