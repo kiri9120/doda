@@ -21,28 +21,8 @@ $breakpoint-sm: 992px;
 
 // font
 
-body {
-    h3{
-        font-size: $font-size-xxl;
-        font-family: "Yu Gothic";
-        src: local("Yu Gothic Bold");
-        font-weight: bold;
-    }
-    h4{
-        font-size: $font-size-xl;
-    }
-    h5{
-        font-size: $font-size-lg;
-    }
-    p{
-        font-size: $font-size-md;
-        margin: 0;
-
-            @include sp-only {
-                font-size: $font-size-sm;
-            }
-
-    }
+body{
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .bg{
@@ -76,18 +56,30 @@ body {
 
 
 // color
-
-.bg-darkblue{
-    background-color: $main-color;
-}
-.bg-gray{
-    background-color: $gray-1;
+.btn-primary {
+  background-color: $main-color !important;
 }
 .text-darkblue {
-    color: $main-color;
+    color: $main-color !important;
 }
-.text-white {
-    color: #fff;
+// .text-white {
+//     color: #fff !important;
+// }
+.text-primary {
+  color: $main-color !important;
+}
+.bg-darkblue {
+  background-color: $main-color !important;
+}
+.bg-gray{
+  background-color: $gray-1 !important;
+}
+.bg-secondary {
+  background-color: #eeeeee !important;
+}
+
+.badge-secondary {
+  background-color: #eeeeee;
 }
 
 //headline
@@ -267,7 +259,7 @@ body {
 .fieldset-card {
   border: .25rem solid;
   border-radius: .75rem;
-  padding: 2rem;
+  padding: 1.75rem;
   height: 100%;
 }
 .table-custom {
@@ -293,4 +285,71 @@ body {
       padding-right: 3rem;
     }
   }
+}
+.table-primary {
+  tr:first-child {
+    th,
+    td {
+      border-top: 0;
+    }
+  }
+  th,
+  td {
+    border-color: rgba(230,230,230,0.8);
+    padding: 1.5rem;
+  }
+  th {
+    white-space: nowrap;
+    background-color: $main-color;
+    color: #fff;
+  }
+  td {
+    background-color: #fff;
+  }
+}
+.mt-25 {
+  margin-top: 20% !important;
+}
+.hr-primary {
+  background-color: $main-color;
+}
+.hr-bold {
+  height: .2rem;
+}
+.modal-content {
+  position: relative;
+  @include respond-above(lg) {
+    margin-top: 10%;
+  }
+
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: initial;
+    transform: translate(15%, -25%);
+    @include respond-above(lg) {
+      transform: translate(30%, -30%);
+    }
+  }
+}
+.position-bottom-0 {
+  bottom: 0;
+}
+.drop-shadow-white-lg {
+  filter:
+    drop-shadow(3px 3px 1px #fff)
+    drop-shadow(-3px -3px 1px #fff)
+    drop-shadow(3px -3px 1px #fff)
+    drop-shadow(-3px 3px 1px #fff)
+  ;
+}
+.line-lg {
+  line-height: 2rem;
+}
+.line-xl {
+  line-height: 2.5rem;
+}
+.font-palt {
+  font-feature-settings: "palt";
 }
