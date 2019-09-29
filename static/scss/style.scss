@@ -270,3 +270,27 @@ body {
   padding: 2rem;
   height: 100%;
 }
+.table-custom {
+  tr:first-child {
+    th {
+      border-top: 0;
+    }
+    td {
+      @include respond-above(lg) {
+        border-top: 0;
+      }
+    }
+  }
+  th,
+  td {
+    @include respond-above(lg) {
+      padding: 1.75rem;
+    }
+  }
+  th {
+    padding-left: 0;
+    @include respond-above(lg) {
+      padding-right: 3rem;
+    }
+  }
+}
