@@ -190,16 +190,21 @@ body{
 
 .pickup-item {
     background: $main-color;
-    min-height: 250px;
-    padding-bottom: 50px;
+    min-height: 20rem;
     position: relative;
-    margin-bottom: 200px;
+    margin-bottom: 11rem;
+    padding-bottom: 3rem;
 
     .pickup-item__bottom {
         position: absolute;
         top: calc(100% - 57px);
     }
-
+    @include respond-above(md) {
+      margin-bottom: 8rem;
+    }
+    @include respond-above(lg) {
+      margin-bottom: 10rem;
+    }
     @include sp-only {
         min-height: auto;
     }
