@@ -8,7 +8,7 @@ $font-size-xxl: 1.875rem;
 $main-color: #1e2380;
 $gray-1: #fafafa;
 
-
+@import "media-queries";
 // メディアクエリ
 $breakpoint-sm: 992px;
 
@@ -112,10 +112,7 @@ body {
 // main-visual
 
 .main-visual{
-    height: 525px;
-    padding-top: 140px;
-    background-image: url(img/main.png);
-    background-size: cover;
+  object-position: 20%;
 }
 
 // ballloon

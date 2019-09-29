@@ -9,22 +9,23 @@
     <link rel="stylesheet" href="scss/style.css">
   </head>
   <body>
-    <div class="vh-100">
-      <div class="main-visual_">
+    <div class="vh-100 d-flex flex-column">
+      <div class="flex-grow-1 position-relative d-flex align-items-center">
+        <img class="position-absolute object-fit-cover main-visual" src="img/main.png" alt="">
         <div class="container">
           <div class="row ">
             <div class="col-12 col-lg-6 ml-lg-auto d-flex flex-column align-items-center">
-              <img class="img-fluid" src="scss/img/agency.png" alt="">
+              <img class="img-fluid" src="img/agency.png" alt="">
               <p class="lead my-4">エンジニア技術取得サービスを運営！</p>
               <button type="button" class="btn bg-darkblue rounded-pill text-white px-4">メールに返信する</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="bg-darkblue">
+      <div class="bg-darkblue py-5">
         <div class="container">
           <div class="row">
-            <div class="col-12 text-white py-5 text-center">
+            <div class="col-12 text-white text-center">
               <h3 class="font-headline mb-5">技術の力で、世の中を変える</h3>
               <p>私たちは、</p>
               <p>世界的に不足している即戦力エンジニアを未経験から育成して</p>
@@ -38,16 +39,18 @@
       <div class="row">
         <div class="col-12">
           <h3 class="headline-type1">募集ポジション説明</h3>
-          <h5 class="my-4">
-            <span class="darkblue">→</span>
-            ソフトウェアエンジニア(サーバー/フロント)</h5>
-          <p>開発部門では、「技術力の力で、世の中を変える」という理念のもと自社サービスの新規企画からアップデートを行なっています。</p>
-          <p>当社のサービスは、エンジニアになりたての方を対象に、「いかに短時間で技術力を習得してもらうか」が鍵なので様々な経験を持った当社の精鋭エンジニアが、「自分がエンジニアになったときにこういうことがあればよかった」</p>
-          <p>という視点でサービスを作り上げていくのが醍醐味です。</p>
+          <h5 class="my-4 font-weight-bolder"><i class="fas fa-arrow-right text-darkblue"></i>ソフトウェアエンジニア(サーバー/フロント)</h5>
+          <p>
+            開発部門では、「技術力の力で、世の中を変える」という理念のもと自社サービスの新規企画からアップデートを行なっています。 <br>
+            当社のサービスは、エンジニアになりたての方を対象に、「いかに短時間で技術力を習得してもらうか」が鍵なので様々な経験を持った当社の精鋭エンジニアが、「自分がエンジニアになったときにこういうことがあればよかった」 <br>
+            という視点でサービスを作り上げていくのが醍醐味です。
+          </p>
         </div>
-        <div class="col-12 my-4">
+      </div>
+      <div class="row">
+        <div class="col-12 my-4 my-lg-5">
           <div class="embed-responsive embed-responsive-21by9">
-            <img class="embed-responsive-item bg" src="scss/img/position.png" alt="">
+            <img class="embed-responsive-item object-fit-cover" src="img/position.png" alt="">
           </div>
         </div>
       </div>
@@ -55,22 +58,22 @@
     <div class="bg-gray">
       <div class="container">
         <div class="row">
-          <div class="col text-darkblue">
-            <h3 class="headline-type1 text-center">Pick Up</h3>
+          <div class="col ">
+            <h3 class="headline-type1 text-darkblue text-center">Pick Up</h3>
           </div>
         </div>
         <div class="row">
-          <div class="col-auto mx-auto text-darkblue">
-            <h4>
+          <div class="col-auto mx-auto">
+            <h4 class="text-darkblue">
               <i class="far fa-check-circle mr-4"></i>仕事を選べる</h4>
-            <h4>
+            <h4 class="text-darkblue">
               <i class="far fa-check-circle mr-4"></i>自由に働ける！</h4>
-            <h4>
+            <h4 class="text-darkblue">
               <i class="far fa-check-circle mr-4"></i>独立支援制度あり！</h4>
           </div>
         </div>
         <div class="row">
-          <div class="col-12 col-lg-6 my-3">
+          <div class="col-12 col-lg-6 mt-lg-3">
             <div class="card pickup-item">
               <div class="card-body text-white text-center">
                 <p class="headline-type2">
@@ -84,7 +87,7 @@
               </div>
               <div class="pickup-item__bottom">
                 <div class="col-4 col-lg-3 card-work-img float-left text-center">
-                  <img src="scss/img/saito.png" class="rounded-circle pickup-item__img">
+                  <img src="img/saito.png" class="rounded-circle pickup-item__img">
                 </div>
                 <div class="col-7 col-lg-8 card-txtbox float-right balloon mr-2">
                   <p class="text-sm">毎朝7時半にジムに行き、11時に出社しています。<br>朝、ジムにいけない場合は19時に会社を出てトレーニングをし、帰宅後に仕事をすることもあります。<br>自由に時間をアレンジできるので、ジムに毎日通うこともでき、結果17kgも痩せました！
@@ -93,7 +96,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-6 my-3">
+          <div class="col-12 col-lg-6 mt-lg-3">
             <div class="card pickup-item">
               <div class="card-body text-white text-center">
                 <p class="headline-type2">
@@ -105,7 +108,7 @@
               </div>
               <div class="pickup-item__bottom">
                 <div class="col-4 col-lg-3 card-work-img float-left text-center">
-                  <img src="scss/img/saito.png" class="rounded-circle pickup-item__img">
+                  <img src="img/saito.png" class="rounded-circle pickup-item__img">
                 </div>
                 <div class="col-7 col-lg-8 card-txtbox float-right balloon mr-2">
                   <p class="text-sm">120字程度の社員の声を挿入。テキストテキストテキストテキスト。<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
@@ -113,7 +116,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 my-3">
+          <div class="col-12 mt-lg-3">
             <div class="card pickup-item">
               <div class="card-body text-white text-center">
                 <p class="headline-type2">
@@ -125,7 +128,7 @@
               </div>
               <div class="pickup-item__bottom position-center col-lg-8 px-0">
                 <div class="col-4 col-lg-3 card-work-img float-left text-center">
-                  <img src="scss/img/saito.png" class="rounded-circle pickup-item__img">
+                  <img src="img/saito.png" class="rounded-circle pickup-item__img">
                 </div>
                 <div class="col-7 col-lg-8 card-txtbox float-right balloon mr-2">
                   <p class="text-sm">
