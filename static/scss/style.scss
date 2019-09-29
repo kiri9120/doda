@@ -77,9 +77,11 @@ body{
 .bg-secondary {
   background-color: #eeeeee !important;
 }
-
+.badge-primary {
+  background-color: $main-color;
+}
 .badge-secondary {
-  background-color: #eeeeee;
+  background-color: #bababa;
 }
 
 //headline
@@ -328,6 +330,8 @@ body{
     top: 0;
     opacity: initial;
     transform: translate(15%, -25%);
+    overflow: hidden;
+    border-radius: 50%;
     @include respond-above(lg) {
       transform: translate(30%, -30%);
     }
@@ -338,17 +342,20 @@ body{
 }
 .drop-shadow-white-lg {
   filter:
-    drop-shadow(3px 3px 1px #fff)
-    drop-shadow(-3px -3px 1px #fff)
-    drop-shadow(3px -3px 1px #fff)
-    drop-shadow(-3px 3px 1px #fff)
+    drop-shadow(3px 3px .5px #fff)
+    drop-shadow(-3px -3px .5px #fff)
+    drop-shadow(3px -3px .5px #fff)
+    drop-shadow(-3px 3px .5px #fff)
   ;
 }
+.line-md {
+  line-height: 1.75em;
+}
 .line-lg {
-  line-height: 2rem;
+  line-height: 2em;
 }
 .line-xl {
-  line-height: 2.5rem;
+  line-height: 2.5em;
 }
 .font-palt {
   font-feature-settings: "palt";
