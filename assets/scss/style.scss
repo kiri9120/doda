@@ -1,0 +1,395 @@
+$font-size-xs: .75rem;
+$font-size-sm: .875rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-xxl: 1.875rem;
+
+$main-color: #1e2380;
+$gray-1: #fafafa;
+
+@import "media-queries";
+// メディアクエリ
+$breakpoint-sm: 992px;
+
+@mixin sp-only {
+  @media (max-width: ($breakpoint-sm)) {
+    @content;
+  }
+}
+
+
+// font
+
+body{
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.bg{
+    background-size: cover;
+}
+
+.text-sm {
+    font-size: $font-size-sm;
+
+    @include sp-only {
+        font-size: $font-size-xs;
+    }
+
+}
+
+.text-md {
+    font-size: $font-size-md;
+}
+
+.text-lg {
+    font-size: $font-size-lg;
+}
+
+.text-xl {
+    font-size: $font-size-xl;
+}
+
+.text-xxl {
+    font-size: $font-size-xxl;
+}
+
+
+// color
+.btn-primary {
+  background-color: $main-color !important;
+}
+.text-darkblue {
+    color: $main-color !important;
+}
+// .text-white {
+//     color: #fff !important;
+// }
+.text-primary {
+  color: $main-color !important;
+}
+.bg-darkblue {
+  background-color: $main-color !important;
+}
+.bg-gray{
+  background-color: $gray-1 !important;
+}
+.bg-secondary {
+  background-color: #eeeeee !important;
+}
+.badge-primary {
+  background-color: $main-color;
+}
+.badge-secondary {
+  background-color: #bababa;
+}
+
+//headline
+
+.headline-type1 {
+    color: $main-color;
+    font-size: $font-size-xxl;
+}
+
+.headline-type2 {
+    color: #fff;
+    font-size: $font-size-lg;
+    text-align: center;
+    margin-bottom: 30px;
+
+    span {
+        padding-bottom: 15px;
+        border-bottom: 2px solid #fff;
+    }
+}
+
+// ballloon
+
+.balloon{
+    position: relative;
+    padding: 20px;
+
+    @include sp-only {
+        padding: 10px;
+    }
+}
+.balloon::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: -15px;
+  top: 40px;
+  border-right: 15px solid $main-color;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.balloon::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: -12px;
+  top: 40px;
+  border-right: 15px solid #fff;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+// caption
+
+.caption{
+    position: absolute;
+    color: #111111;
+    top: 0;
+    left: 50%;
+    padding: 0 10px;
+    margin: 0;
+    background-color: #fff;
+    transform: translateY(-50%) translateX(-50%);
+}
+.caption-not{
+    position: absolute;
+    color: #111111;
+    top: 0;
+    left: 50%;
+    padding: 0 10px;
+    margin: 0;
+    background:linear-gradient(180deg,#fff 0%,#fff 50%,#f6f6f6 50%,#f6f6f6 100%);
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.card-border{
+    border: 2px solid #000000;
+}
+
+// PickUp
+
+.card-txtbox{
+    color: black;
+    background-color: #fff;
+    border: 2px solid $main-color;
+    p{
+        color: black;
+    }
+}
+.pickup-item__img{
+    width: 100%;
+    max-width: 100px;
+    min-width: 60px;
+    border: 2px solid $main-color;
+}
+
+
+.pickup-item {
+    background: $main-color;
+    min-height: 20rem;
+    position: relative;
+    margin-bottom: 11rem;
+    padding-bottom: 3rem;
+
+    .pickup-item__bottom {
+        position: absolute;
+        top: calc(100% - 57px);
+    }
+    @include respond-above(md) {
+      margin-bottom: 8rem;
+    }
+    @include respond-above(md) {
+      margin-bottom: 10rem;
+    }
+    @include sp-only {
+        min-height: auto;
+    }
+}
+
+
+// member
+
+.member-img{
+    width: 210px;
+    height: 210px;
+}
+
+//table
+.table tr:last-child th, .table tr:last-child td {
+    border-bottom: 1px solid #dee2e6;
+}
+
+
+//other
+
+.w-150px {
+    width: 150px;
+}
+
+.minw-150px {
+    min-width: 150px;
+}
+
+.minh-450px {
+    min-height: 450px;
+}
+
+.border-2px {
+    border: 2px solid $main-color;
+}
+
+.position-center {
+  left: 50% !important;
+  -webkit-transform: translateX(-50%) !important;
+          transform: translateX(-50%) !important;
+}
+
+//font-awesome
+
+.fa-check-circle {
+    color: $main-color;
+}
+.object-fit-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.modal-dialog {
+  @include respond-above(md) {
+    max-width: initial;
+  }
+}
+.fieldset-card {
+  border: .25rem solid;
+  border-radius: .75rem;
+  padding: 1.75rem;
+  height: 100%;
+}
+.table-custom {
+  tr:first-child {
+    th {
+      border-top: 0;
+    }
+    td {
+      @include respond-above(md) {
+        border-top: 0;
+      }
+    }
+  }
+  th,
+  td {
+    @include respond-above(md) {
+      padding: 1.75rem;
+    }
+  }
+  th {
+    padding-left: 0;
+    @include respond-above(md) {
+      padding-right: 3rem;
+    }
+  }
+}
+.table-primary {
+  tr:first-child {
+    th,
+    td {
+      border-top: 0;
+    }
+  }
+  th,
+  td {
+    border-color: rgba(230,230,230,0.8);
+    padding: 1.5rem;
+  }
+  th {
+    white-space: nowrap;
+    background-color: $main-color;
+    color: #fff;
+  }
+  td {
+    background-color: #fff;
+  }
+}
+.mt-25 {
+  margin-top: 20% !important;
+}
+.hr-primary {
+  background-color: $main-color;
+}
+.hr-bold {
+  height: .2rem;
+}
+.modal-content {
+  position: relative;
+  @include respond-above(md) {
+    margin-top: 10%;
+  }
+
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: initial;
+    transform: translate(15%, -25%);
+    overflow: hidden;
+    border-radius: 50%;
+    @include respond-above(md) {
+      transform: translate(30%, -30%);
+    }
+  }
+}
+.position-bottom-0 {
+  bottom: 0;
+}
+.drop-shadow-white-lg {
+  filter:
+    drop-shadow(3px 3px .5px #fff)
+    drop-shadow(-3px -3px .5px #fff)
+    drop-shadow(3px -3px .5px #fff)
+    drop-shadow(-3px 3px .5px #fff)
+  ;
+}
+.line-md {
+  line-height: 1.75em;
+}
+.line-lg {
+  line-height: 2em;
+}
+.line-xl {
+  line-height: 2.5em;
+}
+.font-palt {
+  font-feature-settings: "palt";
+}
+// main-visual
+
+.main-visual{
+  position: relative;
+  .img-main-visual {
+    object-position: 10% 50%;
+    height: 55%;
+    @include respond-above(md) {
+      height: 100%;
+    }
+  }
+}
+.main-vusual-gradiant {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#edf6ff+0,edf6ff+100&0+0,0.3+40,0.99+50,1+100 */
+    background: -moz-linear-gradient(top,  rgba(237,246,255,0) 0%, rgba(237,246,255,0.3) 40%, rgba(237,246,255,0.99) 50%, rgba(237,246,255,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(237,246,255,0) 0%,rgba(237,246,255,0.3) 40%,rgba(237,246,255,0.99) 50%,rgba(237,246,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(237,246,255,0) 0%,rgba(237,246,255,0.3) 40%,rgba(237,246,255,0.99) 50%,rgba(237,246,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    @include respond-above(md) {
+      /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#edf6ff+0,edf6ff+100&0+0,0.1+50,0.98+75,0.99+100 */
+      background: -moz-linear-gradient(left,  rgba(237,246,255,0) 0%, rgba(237,246,255,0.1) 50%, rgba(237,246,255,0.98) 75%, rgba(237,246,255,0.99) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left,  rgba(237,246,255,0) 0%,rgba(237,246,255,0.1) 50%,rgba(237,246,255,0.98) 75%,rgba(237,246,255,0.99) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right,  rgba(237,246,255,0) 0%,rgba(237,246,255,0.1) 50%,rgba(237,246,255,0.98) 75%,rgba(237,246,255,0.99) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+  }
+}

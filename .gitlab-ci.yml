@@ -1,0 +1,38 @@
+stages:
+- build
+- deploy
+
+build_hugo:
+  stage: build
+  image: monachus/hugo
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
+  script:
+  - curl -sL https://deb.nodesource.com/setup_10.x | bash -
+  - apt-get install nodejs -qqy
+  - hugo
+  artifacts:
+    paths:
+    - public
+
+deploy_sakura:
+  stage: deploy
+  only:
+  - master
+  dependencies:
+  - build_hugo
+  image: alpine
+  environment:
+    name: preview
+    url: http://chees.sakura.ne.jp/G2r4JYzhw1N1CjKw
+  variables:
+    HOST: chees.sakura.ne.jp
+    PORT: '21'
+    USERNAME: chees
+    PASSWORD: ff8yyzaez4
+    TIMEZONE: 'Asia/Tokyo'
+    SRC_PATH: public
+    DEST_PATH: /home/chees/www/G2r4JYzhw1N1CjKw
+  script:
+  - apk add --quiet lftp
+  - lftp -c "set ftp:ssl-allow yes; set ftp:use-mdtm no; set ftp:timezone $TIMEZONE; open -u $USERNAME,$PASSWORD -p $PORT $HOST; mirror --reverse --parallel=10 --ignore-time --only-newer $SRC_PATH $DEST_PATH"
