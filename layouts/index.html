@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Doda</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-rfs/bootstrap-rfs.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    {{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
+    {{ $css := resources.Get "scss/style.scss" | resources.ToCSS $options }}
+    {{ $style := $css | resources.PostCSS }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+  </head>
+  <body>
+    <div class="vh-100 d-flex flex-column">
+      <div class="flex-grow-1 position-relative d-flex">
+        <div class="position-absolute h-100 w-100 main-visual main-vusual-gradiant">
+          <img class="object-fit-cover img-main-visual " src="img/main.png" alt="">
+        </div>
+        <div class="container align-self-end align-self-lg-center">
+          <div class="row pb-4 pb-md-5 pb-lg-0">
+            <div class="col-12 col-lg-6 ml-lg-auto d-flex flex-column align-items-center">
+              <img class="img-fluid" src="img/agency.png" alt="">
+              <p class="lead my-3 my-md-5 my-lg-4">エンジニア技術取得サービスを運営！</p>
+              <button type="button" class="btn btn-lg rounded-pill text-white bg-darkblue px-4">メールに返信する</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-darkblue py-3 py-lg-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-white text-center">
+              <h3 class="font-headline my-2 my-lg-4 font-weight-bolder">技術の力で、<wbr>世の中を変える</h3>
+              <p class="my-2 my-lg-4 line-lg">私たちは、<br>世界的に不足している即戦力エンジニアを未経験から育成して<br>技術力の力で、世の中を変える。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white py-5">
+      <div class="container">
+        <div class="row my-4 my-lg-5">
+          <div class="col-12">
+            <h3 class="headline-type1_ text-primary font-weight-bolder">募集ポジション説明</h3>
+            <h5 class="my-4 font-weight-bolder">
+              <i class="fas fa-arrow-right text-darkblue mr-3"></i>ソフトウェアエンジニア(サーバー/フロント)</h5>
+            <p class="line-lg text-justify">
+              開発部門では、「技術力の力で、世の中を変える」という理念のもと自社サービスの新規企画からアップデートを行なっています。
+              <br>
+              当社のサービスは、エンジニアになりたての方を対象に、「いかに短時間で技術力を習得してもらうか」が鍵なので様々な経験を持った当社の精鋭エンジニアが、「自分がエンジニアになったときにこういうことがあればよかった」
+              <br>
+              という視点でサービスを作り上げていくのが醍醐味です。
+            </p>
+          </div>
+        </div>
+        <div class="row my-4 my-lg-5">
+          <div class="col-12">
+            <div class="embed-responsive embed-responsive-21by9">
+              <img class="embed-responsive-item object-fit-cover" src="img/position.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray py-5">
+      <div class="container">
+        <div class="row my-4">
+          <div class="col">
+            <h2 class="text-primary text-center font-weight-bolder">Pick Up</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-auto mx-auto">
+            <h4 class="text-primary line-lg font-weight-bolder">
+              <i class="far fa-check-circle fa-lg mr-4"></i>仕事を選べる</h4>
+            <h4 class="text-primary line-lg font-weight-bolder">
+              <i class="far fa-check-circle fa-lg mr-4"></i>自由に働ける！</h4>
+            <h4 class="text-primary line-lg font-weight-bolder">
+              <i class="far fa-check-circle fa-lg mr-4"></i>独立支援制度あり！</h4>
+          </div>
+        </div>
+        <div class="row my-4">
+          <div class="col-12 col-lg-6 mt-lg-3">
+            <div class="card pickup-item">
+              <div class="card-body text-white text-center">
+                <p class="headline-type2">
+                  <span class="font-weight-bolder">
+                    仕事を選べる！
+                  </span>
+                </p>
+                <p>自分のつけたい技術を優先的に仕事で身につけられる。</p>
+                <p class="text-sm">※エンジニア技術習得サービスを運営しているので、社内には様々な経験をもった精鋭エンジニアが集結してます。※エンジニア技術習得サービスを運営しているので、社内には様々な経験をもった精鋭エンジニアが集結してます。※エンジニア技術習得サービスを運営しているので、社内には様々な経験をもった精鋭エンジニアが集結してます。※エンジニア技術習得サービスを運営しているので、社内には様々な経験をもった精鋭エンジニアが集結してます。※エンジニア技術習得サービスを運営しているので、社内には様々な経験をもった精鋭エンジニアが集結してます。<br>自分のやったことな領域を無料でトレーニングや講義、プロジェクトに入るのが可能です。
+                </p>
+              </div>
+              <div class="pickup-item__bottom">
+                <div class="col-4 col-lg-3 card-work-img float-left text-center">
+                  <img src="img/saito.png" class="rounded-circle pickup-item__img">
+                </div>
+                <div class="col-7 col-lg-8 card-txtbox float-right balloon mr-2">
+                  <p class="text-sm">毎朝7時半にジムに行き、11時に出社しています。<br>朝、ジムにいけない場合は19時に会社を出てトレーニングをし、帰宅後に仕事をすることもあります。<br>自由に時間をアレンジできるので、ジムに毎日通うこともでき、結果17kgも痩せました！
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 mt-lg-3 d-flex">
+            <div class="card pickup-item">
+              <div class="card-body text-white text-center">
+                <p class="headline-type2">
+                  <span class="font-weight-bolder">
+                    自由に働ける！
+                  </span>
+                </p>
+                <p>いつどこで働いてもOK！副業も推奨！<br>当社の人事制度は、性善説のもとに作れてます。<br>もちろん「やることをやる」前提ですが、出社時間や勤務場所は自由。副業も推奨しています。 </p>
+                <p></p>
+              </div>
+              <div class="pickup-item__bottom">
+                <div class="col-4 col-lg-3 card-work-img float-left text-center">
+                  <img src="img/saito.png" class="rounded-circle pickup-item__img">
+                </div>
+                <div class="col-7 col-lg-8 card-txtbox float-right balloon mr-2">
+                  <p class="text-sm">120字程度の社員の声を挿入。テキストテキストテキストテキスト。<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 mt-lg-3">
+            <div class="card pickup-item">
+              <div class="card-body text-white text-center">
+                <p class="headline-type2">
+                  <span class="font-weight-bolder">
+                    自由に働ける！
+                  </span>
+                </p>
+                <p>いつどこで働いてもOK！副業も推奨！<br>当社の人事制度は、性善説のもとに作れてます。<br>もちろん「やることをやる」前提ですが、出社時間や勤務場所は自由。副業も推奨しています。</p>
+              </div>
+              <div class="pickup-item__bottom position-center col-lg-8 px-0">
+                <div class="col-4 col-lg-3 card-work-img float-left text-center">
+                  <img src="img/saito.png" class="rounded-circle pickup-item__img">
+                </div>
+                <div class="col-7 col-lg-8 card-txtbox float-right balloon mr-2">
+                  <p class="text-sm">
+                    120字程度の社員の声を挿入。テキストテキストテキストテキスト。<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト。<br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキ
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5">
+      <div class="row my-3 my-lg-4 justify-content-center align-items-center">
+        <div class="col-12 col-lg-auto order-lg-1">
+          <h2 class="text-primary text-center font-weight-bolder">向いてる人、向いてない人</h2>
+        </div>
+        <div class="col-auto mt-3 my-lg-3 order-lg-0 d-none d-lg-block">
+          <img class="icon-like-people" src="img/icon-like-people.png" alt="" width="100">
+        </div>
+        <div class="col-auto mt-3 my-lg-3 order-lg-2 d-none d-lg-block">
+          <img class="icon-like-unpeople" src="img/icon-unlike-people.png" alt="" width="100">
+        </div>
+      </div>
+      <div class="row my-3 my-lg-4 justify-content-center">
+        <div class="col-10 col-lg-6 mt-3 d-flex flex-column align-items-center">
+          <img class="icon-like-people mb-3 d-lg-none" src="img/icon-like-people.png" alt="" width="100">
+          <fieldset class="fieldset-card font-weight-bolder line-lg">
+            <legend class="w-auto mx-auto px-5 text-nowrap">向いてる人</legend>
+            <ul class="">
+              <li>新たな技術を身に付けることを挑戦したい人。</li>
+              <li>プロジェクトの全体像を自分で考えてチームで進めていきたい人</li>
+              <li>給与以上に働く環境を重視したい人。</li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="col-10 col-lg-6 mt-3 d-flex flex-column align-items-center">
+          <img class="icon-like-unpeople mb-3 d-lg-none" src="img/icon-unlike-people.png" alt="" width="100">
+          <fieldset class="fieldset-card font-weight-bolder line-lg bg-secondary">
+            <legend class="w-auto mx-auto px-5 text-nowrap">向いてない人</legend>
+            <ul class="">
+              <li>今の持っている技術範囲内で仕事をしていきたい人。</li>
+              <li>上司から振られる仕事をコツコツと進めていきたい人。</li>
+              <li>働く環境よりも給与を重要視したい人。</li>
+            </ul>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <div class="bg-light py-5">
+      <div class="container">
+        <div class="row my-4">
+          <div class="col">
+            <h2 class="headline-type1 text-center font-weight-bolder">メンバーを知る</h2>
+          </div>
+        </div>
+        <div class="row my-4 justify-content-center">
+          <div class="col-8 col-md-3 mb-4 mt-lg-3 px-4">
+            <a class="btn w-100 d-flex flex-column align-items-center" href="#" role="button" data-toggle="modal" data-target="#exampleModalLong">
+              <div class="embed-responsive embed-responsive-1by1 rounded-circle shadow-sm mb-4">
+                <img src="img/saito.png" class="embed-responsive-item object-fit-cover member-img_">
+              </div>
+              <h6 class="">営業</h6>
+              <h6 class="">斎藤光男</h6>
+            </a>
+          </div>
+          <div class="col-8 col-md-3 mb-4 mt-lg-3 px-4">
+            <a class="btn w-100 d-flex flex-column align-items-center" href="#" role="button" data-toggle="modal" data-target="#exampleModalLong">
+              <div class="embed-responsive embed-responsive-1by1 rounded-circle shadow-sm mb-4">
+                <img src="img/miyashita.png" class="embed-responsive-item object-fit-cover member-img_">
+              </div>
+              <h6 class="">コールスタッフ</h6>
+              <h6 class="">宮下愛美</h6>
+            </a>
+          </div>
+          <div class="col-8 col-md-3 mb-4 mt-lg-3 px-4">
+            <a class="btn w-100 d-flex flex-column align-items-center" href="#" role="button" data-toggle="modal" data-target="#exampleModalLong">
+              <div class="embed-responsive embed-responsive-1by1 rounded-circle shadow-sm mb-4">
+                <img src="img/sasaki.png" class="embed-responsive-item object-fit-cover member-img_" style="object-position: 20%;">
+              </div>
+              <h6 class="">営業</h6>
+              <h6 class="">佐々木こうじ</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white py-5">
+      <div class="container">
+        <div class="row my-4">
+          <div class="col-12">
+            <h2 class="headline-type1_ text-primary text-center font-weight-bolder">求人票情報</h2>
+            <hr class="my-4 hr-primary hr-bold">
+            <table class="table table-custom">
+              <tbody>
+                <tr>
+                  <th scope="col" class="text-nowrap pr-5 d-block d-lg-table-cell">必須条件</th>
+                  <td scope="col" class="d-block d-lg-table-cell">
+                    <p>下記いずれかの開発言語を使った開発経験 3年以上</p>
+                    <p>言語：Kotlin Clojure Dart Rust Elixir Scala Go Java8 TypeScript JavaScript Python C#.NET</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="col" class="text-nowrap d-block d-lg-table-cell">定員</th>
+                  <td class="d-block d-lg-table-cell">
+                    <p>2名</p>
+                  </td>
+                </th>
+              </tr>
+              <tr>
+                <th scope="col" class="text-nowrap d-block d-lg-table-cell">ポジション説明</th>
+                <td class="d-block d-lg-table-cell">
+                  <p>自社パッケージソフトウェアの開発</p>
+                </td>
+              </tr>
+              <tr>
+                <th scope="col" class="text-nowrap d-block d-lg-table-cell">勤務地</th>
+                <td class="d-block d-lg-table-cell">
+                  <p>【東京本社】〒151-0061 東京都渋谷区初台1-51-1初台センタービル7F</p>
+                </td>
+              </tr>
+              <tr>
+                <th scope="col" class="text-nowrap d-block d-lg-table-cell">勤務時間</th>
+                <td class="d-block d-lg-table-cell">
+                  <p>10:00～19:00 （所定労働時間 8時間）</p>
+                  <p>※休憩時間：1時間</p>
+                  <p>※月間平均残業時間：4.8時間以下 (2018年実績)</p>
+                </td>
+              </tr>
+              <tr>
+                <th scope="col" class="text-nowrap d-block d-lg-table-cell">雇用形態</th>
+                <td class="d-block d-lg-table-cell">
+                  <p>正社員</p>
+                </td>
+              </tr>
+              <tr>
+                <th scope="col" class="text-nowrap d-block d-lg-table-cell">給与</th>
+                <td class="d-block d-lg-table-cell">
+                  <p>月給40万円～80万円</p>
+                  <p>※試用期間6ヵ月あり(試用期間中は月給30万円～60万円)</p>
+                  <p>※経験・能力を考慮のうえ、当社規定により優遇いたします。</p>
+                  <table class="table table-borderless mt-3">
+                    <tbody>
+                      <tr>
+                        <th class="py-2 d-block d-lg-table-cell px-0">
+                          <span class="badge badge-pill badge-secondary text-dark p-2 w-100">賞与</span>
+                        </th>
+                        <td class="py-2 d-block d-lg-table-cell">
+                          <p>年1回決算賞与あり</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="py-2 d-block d-lg-table-cell px-0">
+                          <span class="badge badge-pill badge-secondary text-dark p-2 w-100">昇給</span>
+                        </th>
+                        <td class="py-2 d-block d-lg-table-cell">
+                          <p>年2回6月・12月</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="py-2 d-block d-lg-table-cell px-0 border-0">
+                          <span class="badge badge-pill badge-secondary text-dark p-2 w-100">その他手当</span>
+                        </th>
+                        <td class="py-2 d-block d-lg-table-cell border-0">
+                          <p>インセンティブ有り</p>
+                          <p>※＋αの成果を出した場合、賞与とは別にインセンティブを付与します。</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <th scope="col" class="text-nowrap d-block d-lg-table-cell">福利厚生</th>
+                <td class="d-block d-lg-table-cell">
+                  <div class="row">
+                    <div class="col-12 col-lg-6 py-2 d-flex">
+                      <img src="img/benefit01.png" width="50" height="50">
+                      <div class="txt ml-4">
+                        <p>交通費、住宅手当系</p>
+                        <ul>
+                          <li>交通費支給</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 py-2 d-flex">
+                      <img src="img/benefit02.png" width="50" height="50">
+                      <div class="txt ml-4">
+                        <p>ライフサポート系</p>
+                        <ul>
+                          <li>社会保険完備</li>
+                          <li>子供手当有り</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 py-2 d-flex">
+                      <img src="img/benefit03.png" width="50" height="50">
+                      <div class="txt ml-4">
+                        <p>経費使用やオリジナル福利厚生など</p>
+                        <ul>
+                          <li>PC支給（予算内で好きなPCを選択可）</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 py-2 d-flex">
+                      <img src="img/benefit04.png" width="50" height="50">
+                      <div class="txt ml-4">
+                        <p>賞与系</p>
+                        <ul>
+                          <li>決算賞与</li>
+                          <li>年２回（夏、冬）</li>
+                          <li>インセンティブ</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-12 py-2 d-flex">
+                      <img src="img/benefit05.png" width="50" height="50">
+                      <div class="txt ml-4">
+                        <p>休暇関係</p>
+                        <ul>
+                          <li>有給休暇（10日〜）</li>
+                          <li>土日祝日休み</li>
+                          <li>ロングバケーション制度<br>有給とは別に、週末を含む7日間連続の休暇を年に2回取得できる福利厚生</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-darkblue py-5">
+    <div class="container">
+      <div class="row my-4">
+        <div class="col-12 text-center text-white font-palt">
+          <h1 class="font-weight-bolder">是非、ご応募ください！</h1>
+          <p class="line-xl my-4">面接時、当社の職場案内やキャリアアップ、<br>応募者様のキャリア詳細をお話できれば幸いです。</p>
+          <button type="button" class="btn btn-lg btn-light darkblue rounded-pill text-primary font-weight-bolder px-5">メールに返信する</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content container">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fas fa-times-circle fa-2x text-primary bg-white"></i>
+        </button>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-xl-3 d-none d-xl-block">
+              <img class="img-fluid position-absolute position-bottom-0 drop-shadow-white-lg" src="img/img-mask-man.png" alt="">
+            </div>
+            <div class="col-12 col-xl-9">
+              <div class="row align-items-center my-2">
+                <div class="col-auto col-lg-2">
+                  <span class="badge badge-secondary rounded-0 w-100 p-2 text-dark">前職</span>
+                </div>
+                <div class="col-12 col-lg-10">
+                  <span class="text-secondary">営業支援サポート営業マン</span>
+                </div>
+                <div class="col-12 my-1"></div>
+                <div class="col-auto col-lg-2">
+                  <span class="badge badge-primary rounded-0 w-100 p-2">現職</span>
+                </div>
+                <div class="col-12 col-lg-10">
+                  <span class="font-weight-bolder">CPエージェンシー代表取締役</span>
+                </div>
+              </div>
+              <div class="row my-4">
+                <div class="col">
+                  <h2 class="font-weight-bolder line-md">組織作りの楽しさに魅了され、<br>営業マンから代表取締役へ。</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <h4 class="font-weight-bolder">入社した理由は？</h4>
+                  <hr class="my-3 hr-primary hr-bold">
+                  <p class="line-lg text-justify">
+                    入社した理由が何文字か入ります。前職は自動車部品メーカーで電子製品の制御設計をしていました。元々大学院で電気工学を研究していた流れから就職したんですが、自動車ならではの慎重な開発スピードや完成された組織体制が性に合わず…そこで、以前から興味があり個人でも勉強していたデータ分析関連の仕事をやりたいと、WEBやIT関連の会社に転職活動を始め、CPエージェンシーに出会いました。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row my-lg-5">
+            <div class="col-12">
+              <h4 class="text-center font-weight-bolder">OFF TIME</h4>
+              <hr class="my-3 hr-primary hr-bold">
+              <div class="row justify-content-center">
+                <div class="col-10 col-lg-4">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <img class="embed-responsive-item object-fit-cover" src="img/img-survival.png" alt="">
+                  </div>
+                  <p class="my-4 line-lg">
+                    休日はサバゲーも趣味でやってます笑
+                    <br>
+                    最近ハマり始めたのですが、緊張感や戦略を考え、仲間と共にゴールを目指すのは経営と似てますね笑
+                  </p>
+                </div>
+                <div class="col-10 col-lg-4">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <img class="embed-responsive-item object-fit-cover" src="img/img-billiards.png" alt="">
+                  </div>
+                  <p class="my-4 line-lg">
+                    ビリヤードの大会もたまに行ってます。
+                    <br>
+                    コツコツと上達する楽しみがたまらないです笑
+                  </p>
+                </div>
+                <div class="col-10 col-lg-4">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <img class="embed-responsive-item object-fit-cover" src="img/img-tapioka.png" alt="">
+                  </div>
+                  <p class="my-4 line-lg">
+                    最初はバカにしてたんですけど、最近のマイフェイバリットドリンクはタピオカです！一緒に美味しいタピオカ巡りをお昼休みにしませんか笑
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row my-5">
+            <div class="col-12">
+              <h4 class="text-center font-weight-bolder">ある一日のスケジュール</h4>
+              <hr class="hr-primary hr-bold m-0">
+              <table class="table table-primary">
+                <tr>
+                  <th class="d-block d-lg-table-cell">
+                    <span>〜10:00</span>
+                    <span class="float-right">出社・メール確認</span>
+                  </th>
+                  <td class="d-block d-lg-table-cell">
+                    出社後すぐにメールの確認、今日のスケジュール確認など、本日の仕事を整理。
+                  </td>
+                </tr>
+                <tr>
+                  <th class="d-block d-lg-table-cell">
+                    <span>11:00〜</span>
+                    <span class="float-right">朝会</span>
+                  </th>
+                  <td class="d-block d-lg-table-cell">
+                    プログラマー、デザイナーなどのチームに分かれて行われる。
+                    <br>
+                    週によって重点的に見るチームを変えてバランスよく参加している（2行まで。）
+                  </td>
+                </tr>
+                <tr>
+                  <th class="d-block d-lg-table-cell">
+                    <span>12:00〜</span>
+                    <span class="float-right">MTG</span>
+                  </th>
+                  <td class="d-block d-lg-table-cell">
+                    テキストテキスト。
+                  </td>
+                </tr>
+                <tr>
+                  <th class="d-block d-lg-table-cell">
+                    <span>13:00〜</span>
+                    <span class="float-right">お昼休憩</span>
+                  </th>
+                  <td class="d-block d-lg-table-cell">
+                    テキストテキスト。
+                  </td>
+                </tr>
+                <tr>
+                  <th class="d-block d-lg-table-cell">
+                    <span>14:00〜</span>
+                    <span class="float-right">資料作成</span>
+                  </th>
+                  <td class="d-block d-lg-table-cell">
+                    テキストテキスト。
+                  </td>
+                </tr>
+                <tr>
+                  <th class="d-block d-lg-table-cell">
+                    <span>15:00〜</span>
+                    <span class="float-right">商談</span>
+                  </th>
+                  <td class="d-block d-lg-table-cell">
+                    テキストテキスト。
+                  </td>
+                </tr>
+                <tr>
+                  <th class="d-block d-lg-table-cell">
+                    <span>16:00〜</span>
+                    <span class="float-right">ご提案書作成</span>
+                  </th>
+                  <td class="d-block d-lg-table-cell">
+                    テキストテキスト。
+                  </td>
+                </tr>
+                <tr>
+                  <th class="d-block d-lg-table-cell">
+                    <span>18:00〜</span>
+                    <span class="float-right">フォローアップ</span>
+                  </th>
+                  <td class="d-block d-lg-table-cell">
+                    テキストテキスト。
+                  </td>
+                </tr>
+                <tr>
+                  <th class="d-block d-lg-table-cell">
+                    <span>20:00〜</span>
+                    <span class="float-right">退社</span>
+                  </th>
+                  <td class="d-block d-lg-table-cell">
+                    テキストテキスト。
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
